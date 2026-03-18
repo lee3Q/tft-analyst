@@ -55,7 +55,7 @@ def recommend(
         result["phase"] = result.get("phase", "") + " → 중반 (완성 덱)" if "phase" in result else "중반 (완성 덱)"
 
         # 안정 루트 vs 리스크 루트 분리
-        stable = sorted(deck_matches, key=lambda d: d["avg_placement"])[:3]
+        stable = sorted(deck_matches, key=lambda d: d["avg_placement"] if d["avg_placement"] > 0 else 99)[:3]
         risky = sorted(deck_matches, key=lambda d: -d["first_rate"])[:3]
 
         result["stable_route"] = {
