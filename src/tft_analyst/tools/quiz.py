@@ -21,7 +21,8 @@ def quiz() -> str:
 
     # 1. 패치 브리핑
     if decks:
-        top_decks = sorted(decks, key=lambda d: d.avg_placement)[:3]
+        ranked_decks = [d for d in decks if d.avg_placement > 0]
+        top_decks = sorted(ranked_decks, key=lambda d: d.avg_placement)[:3] if ranked_decks else decks[:3]
         result["briefing"] = {
             "top_meta_decks": [
                 {"name": d.name, "avg_placement": d.avg_placement, "synergies": d.synergy_tags}
@@ -105,18 +106,19 @@ def _buildup_matchup_quiz(buildups: list) -> list[dict]:
 def _meta_deck_quiz(decks: list) -> list[dict]:
     """메타 덱 관련 퀴즈."""
     questions = []
-    if len(decks) >= 3:
-        sorted_decks = sorted(decks, key=lambda d: d.avg_placement)
+    ranked = [d for d in decks if d.avg_placement > 0]
+    if len(ranked) >= 3:
+        sorted_decks = sorted(ranked, key=lambda d: d.avg_placement)
         correct = sorted_decks[0]
         wrong = random.sample(sorted_decks[3:], min(2, len(sorted_decks) - 3)) if len(sorted_decks) > 3 else sorted_decks[1:3]
         options = [correct.name] + [w.name for w in wrong]
         random.shuffle(options)
 
         questions.append({
-            "question": "현재 패치에서 평균 순위가 가장 높은(낮은) 메타 덱은?",
+            "question": "현재 패치에서 평균 순위가 가장 좋은 메타 덱은?",
             "options": options,
             "answer": correct.name,
-            "explanation": f"{correct.name}의 평균 순위는 {correct.avg_placement}입니다.",
+            "explanation": f"{correct.name}의 평균 순위는 {correct.avg_placement:.2f}입니다.",
         })
 
     return questions
