@@ -72,6 +72,25 @@ TFT(팀파이트 택틱스) 공략 사이트 데이터를 크롤링하여 정제
 
 ## 5. 데이터 스키마
 
+### 5.0 챔피언 (Set 16 기준)
+```json
+{
+  "name": "챔피언 이름",
+  "cost": 3,
+  "synergies": ["시너지 태그"],
+  "skill_name": "스킬 이름",
+  "skill_description": "스킬 효과 요약",
+  "skill_range": 3,
+  "skill_target": "farthest|nearest|lowest_hp|highest_hp|aoe|self|random|line",
+  "cc_type": "stun|knockup|pull|slow|silence|taunt|disarm",
+  "cc_duration": 1.5,
+  "damage_type": "physical|magic|true",
+  "attack_range": 1,
+  "role": "tank|carry|support|assassin"
+}
+```
+> 배치 가이드는 이 데이터 기반으로 동적 생성. 하드코딩 규칙 없음.
+
 ### 5.1 완성 덱
 ```json
 {

@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import json
 
-from ..data.models import Buildup, Deck
-from ..data.store import load_buildups, load_decks
+from ..data.models import Buildup, Champion, Deck
+from ..data.store import get_champion, load_buildups, load_champions, load_decks
 
 
 def recommend(
@@ -143,20 +143,49 @@ def _match_decks(champions: list[str], items: list[str], decks: list[Deck]) -> l
 
 
 def _positioning_guide(opponent_info: str) -> list[str]:
-    """상대 정보 기반 배치 가이드 (규칙 기반)."""
+    """상대 정보 기반 배치 가이드 — 챔피언 스킬 데이터 기반."""
     guides = []
-    info_lower = opponent_info.lower()
+    champions = load_champions()
+    champ_by_name = {c.name.lower(): c for c in champions}
 
-    # 기본 배치 규칙
-    if "암살자" in info_lower or "assassin" in info_lower:
-        guides.append("상대에 암살자가 있으면: 딜러를 앞줄 중앙에 배치하여 백라인 침투 방지")
-    if "블리츠" in info_lower or "blitz" in info_lower:
-        guides.append("블리츠크랭크 대응: 가장 뒤 줄에 미끼 유닛 배치")
-    if "제피르" in info_lower or "zephyr" in info_lower:
-        guides.append("제피르 대응: 캐리 위치를 매 라운드 변경")
+    # 상대 정보에서 챔피언 이름 추출
+    mentioned_champs: list[Champion] = []
+    for name, champ in champ_by_name.items():
+        if name in opponent_info.lower():
+            mentioned_champs.append(champ)
 
+    # 챔피언 스킬 데이터 기반 배치 가이드
+    for champ in mentioned_champs:
+        # CC기 챔피언 대응
+        if champ.has_cc:
+            if champ.skill_target == "farthest":
+                guides.append(f"{champ.name} 대응: 스킬이 가장 먼 대상 타겟 ({champ.cc_type} {champ.cc_duration}초) → 캐리를 가까이 배치")
+            elif champ.skill_target == "nearest":
+                guides.append(f"{champ.name} 대응: 스킬이 가장 가까운 대상 타겟 ({champ.cc_type} {champ.cc_duration}초) → 탱커로 스킬 받기")
+            elif champ.skill_target == "aoe":
+                guides.append(f"{champ.name} 대응: 광역 {champ.cc_type} (범위 {champ.skill_range}칸) → 유닛을 분산 배치")
+            elif champ.skill_target == "lowest_hp":
+                guides.append(f"{champ.name} 대응: 체력 낮은 대상 타겟 → 캐리 체력 아이템 고려")
+            else:
+                guides.append(f"{champ.name}: {champ.cc_type} {champ.cc_duration}초 ({champ.skill_target} 타겟) 주의")
+
+        # 뒷라인 위협 챔피언 대응
+        if champ.is_backline_threat and not champ.has_cc:
+            if champ.role == "assassin":
+                guides.append(f"{champ.name} (암살자): 캐리를 앞줄 또는 중앙으로 이동하여 점프 방지")
+            else:
+                guides.append(f"{champ.name}: 뒷라인 위협 — 캐리 위치 조정 필요")
+
+    # 시너지 기반 가이드
+    if "암살자" in opponent_info.lower() or "assassin" in opponent_info.lower():
+        if not any("암살자" in g for g in guides):
+            guides.append("암살자 시너지 대응: 캐리를 앞줄/중앙에 배치, 뒤쪽에 미끼 유닛")
+
+    # 가이드가 없으면 일반 조언
     if not guides:
-        guides.append("상대 딜러 위치에 맞춰 탱커를 대각선으로 배치")
-        guides.append("CC기 챔피언은 상대 캐리 사정거리 내에 배치")
+        if champions:
+            guides.append("상대 챔피언의 스킬 타겟 방식을 확인하고 그에 맞게 배치를 조정하세요")
+        else:
+            guides.append("챔피언 데이터가 없습니다. 챔피언 데이터를 먼저 등록해주세요.")
 
     return guides

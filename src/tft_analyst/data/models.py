@@ -24,6 +24,33 @@ class Deck:
 
 
 @dataclass
+class Champion:
+    """챔피언 스킬/특성 데이터 (Set 16 기준)."""
+
+    name: str
+    cost: int  # 1~5 코스트
+    synergies: list[str]  # 시너지 태그
+    skill_name: str
+    skill_description: str  # 스킬 효과 요약
+    skill_range: int  # 스킬 사거리 (칸 수, 0=자기자신)
+    skill_target: str  # 타겟 방식: "nearest", "farthest", "lowest_hp", "highest_hp", "aoe", "self", "random", "line" 등
+    cc_type: str = ""  # CC 종류: "stun", "knockup", "pull", "slow", "silence", "taunt", "disarm", "" (없음)
+    cc_duration: float = 0.0  # CC 지속시간 (초)
+    damage_type: str = "physical"  # "physical", "magic", "true"
+    attack_range: int = 1  # 기본 공격 사거리 (칸)
+    role: str = ""  # "tank", "carry", "support", "assassin" 등
+
+    @property
+    def has_cc(self) -> bool:
+        return bool(self.cc_type)
+
+    @property
+    def is_backline_threat(self) -> bool:
+        """뒷라인을 위협하는 챔피언인지."""
+        return self.skill_target in ("farthest", "lowest_hp") or self.role == "assassin"
+
+
+@dataclass
 class Buildup:
     """초반 빌드업 데이터."""
 

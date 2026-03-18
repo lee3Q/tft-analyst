@@ -6,7 +6,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from .models import Buildup, Deck, GameRecord
+from .models import Buildup, Champion, Deck, GameRecord
 
 DATA_DIR = Path(__file__).resolve().parent.parent.parent.parent / "data"
 
@@ -26,6 +26,34 @@ def _write_json(filename: str, data: list[dict]) -> None:
     _ensure_dir()
     path = DATA_DIR / filename
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+# --- Champions ---
+
+def load_champions() -> list[Champion]:
+    return [Champion(**c) for c in _read_json("champions.json")]
+
+
+def save_champions(champions: list[Champion]) -> None:
+    _write_json("champions.json", [asdict(c) for c in champions])
+
+
+def get_champion(name: str) -> Champion | None:
+    """이름으로 챔피언 조회."""
+    for c in load_champions():
+        if c.name.lower() == name.lower():
+            return c
+    return None
+
+
+def get_champions_with_cc() -> list[Champion]:
+    """CC기가 있는 챔피언 목록."""
+    return [c for c in load_champions() if c.has_cc]
+
+
+def get_backline_threats() -> list[Champion]:
+    """뒷라인 위협 챔피언 목록."""
+    return [c for c in load_champions() if c.is_backline_threat]
 
 
 # --- Decks ---
