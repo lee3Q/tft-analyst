@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tft-analyst": {
+      "command": "/Users/sanggyulee/tft-analyst/.venv/bin/python",
+      "args": ["-m", "tft_analyst.server"]
+    }
+  }
+}
