@@ -17,8 +17,8 @@ def get_meta(mode: str = "brief") -> str:
     if not decks:
         return json.dumps({"error": "메타 덱 데이터가 없습니다. 먼저 crawl을 실행하세요."}, ensure_ascii=False)
 
-    # 승률(평균 순위 낮은 순) 기준 정렬
-    decks.sort(key=lambda d: d.avg_placement)
+    # 통계 있는 덱 우선, 평균 순위 낮은 순 정렬 (0.0은 통계 없음 → 뒤로)
+    decks.sort(key=lambda d: d.avg_placement if d.avg_placement > 0 else 99)
 
     if mode == "brief":
         decks = decks[:5]
