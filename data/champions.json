@@ -1,0 +1,1723 @@
+[
+  {
+    "name": "Anivia",
+    "cost": 1,
+    "synergies": [
+      "Freljord",
+      "Invoker"
+    ],
+    "skill_name": "Frostbite",
+    "skill_description": "Fire an ice shard at target that deals ? () magic damage. If they are Chilled, the damage Critically Strikes.{{TFT_Keyword_Chill}}",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "Blitzcrank",
+    "cost": 1,
+    "synergies": [
+      "Zaun",
+      "Juggernaut"
+    ],
+    "skill_name": "Static Field",
+    "skill_description": "Gain ? () Shield for ? seconds and deal ? () magic damage to all enemies within ? hex.",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Briar",
+    "cost": 1,
+    "synergies": [
+      "Noxus",
+      "Slayer",
+      "Juggernaut"
+    ],
+    "skill_name": "Blood Frenzy",
+    "skill_description": "Leap to the furthest enemy within ? hexes. For ? seconds gain increased Move Speed, @BonusAD*100@% Attack Damage, and ? () decaying Attack Speed.",
+    "skill_range": 1,
+    "skill_target": "farthest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Caitlyn",
+    "cost": 1,
+    "synergies": [
+      "Piltover",
+      "Longshot"
+    ],
+    "skill_name": "Ace in the Hole",
+    "skill_description": "Fire a bullet towards the farthest enemy, dealing ? () physical damage to the first enemy it hits. If they die, the bullet ricochets, dealing excess damage to the next enemy hit.",
+    "skill_range": 6,
+    "skill_target": "farthest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 6,
+    "role": "carry"
+  },
+  {
+    "name": "Illaoi",
+    "cost": 1,
+    "synergies": [
+      "Bilgewater",
+      "Bruiser"
+    ],
+    "skill_name": "Tentacle Smash",
+    "skill_description": "Restore ? () Health and slam a tentacle, dealing ? () physical damage to enemies in a line.",
+    "skill_range": 1,
+    "skill_target": "line",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "JarvanIV",
+    "cost": 1,
+    "synergies": [
+      "Demacia",
+      "Defender"
+    ],
+    "skill_name": "Demacian Standard",
+    "skill_description": "Gain ? () Shield for ? seconds. Grant all allies ? () Attack Speed for ? seconds.",
+    "skill_range": 1,
+    "skill_target": "self",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Jhin",
+    "cost": 1,
+    "synergies": [
+      "Ionia",
+      "Gunslinger"
+    ],
+    "skill_name": "Curtain Call",
+    "skill_description": "For the next 4 attacks, set Attack Speed to ?, gain infinite range and replace attacks with a cannon shot. Cannon shots deal ? () physical damage. The 4th shot deals @FourthShotDamageMult*100@% more d",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "KogMaw",
+    "cost": 1,
+    "synergies": [
+      "Void",
+      "Arcanist",
+      "Longshot"
+    ],
+    "skill_name": "Caustic Spittle",
+    "skill_description": "Deal ? () magic damage to target and reduce their Armor and Magic Resist by ?. Adjacent enemies are dealt @PercentToSecondaryEnemies*100@% of the damage and effect.",
+    "skill_range": 6,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 6,
+    "role": "carry"
+  },
+  {
+    "name": "Lulu",
+    "cost": 1,
+    "synergies": [
+      "Yordle",
+      "Arcanist"
+    ],
+    "skill_name": "Whimsy",
+    "skill_description": "Deal ? () magic damage to target and make them dance for ? seconds. The projectile then bounces to the nearest target, dealing ? () magic damage.",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "PiltoverInvention",
+    "cost": 1,
+    "synergies": [],
+    "skill_name": "Piltover Customs Special",
+    "skill_description": "Each item equipped to the invention will determine what it does when it fires.",
+    "skill_range": 33,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 33,
+    "role": "carry"
+  },
+  {
+    "name": "Qiyana",
+    "cost": 1,
+    "synergies": [
+      "Ixtal",
+      "Slayer"
+    ],
+    "skill_name": "Clear The Brush",
+    "skill_description": "Dash to a nearby hex and swing forward, dealing ? () physical damage to enemies in a ?-hex line.",
+    "skill_range": 1,
+    "skill_target": "line",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Rumble",
+    "cost": 1,
+    "synergies": [
+      "Yordle",
+      "Defender"
+    ],
+    "skill_name": "Junkyard Titan",
+    "skill_description": "Gain ? () Shield for ? seconds. Fire a burst of flames, dealing ? () magic damage in a cone.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Shen",
+    "cost": 1,
+    "synergies": [
+      "Ionia",
+      "Bruiser"
+    ],
+    "skill_name": "Stand United",
+    "skill_description": "Grant ? () Shield to this unit and a nearby damaged ally for ? seconds.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Sona",
+    "cost": 1,
+    "synergies": [
+      "Demacia",
+      "Invoker"
+    ],
+    "skill_name": "Power Chord",
+    "skill_description": "Deal ? () magic damage to ? nearby enemies and restore ? () Health to the lowest Health ally.",
+    "skill_range": 4,
+    "skill_target": "lowest_hp",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "Viego",
+    "cost": 1,
+    "synergies": [
+      "Shadow Isles",
+      "Quickstriker"
+    ],
+    "skill_name": "Blade of the Ruined King",
+    "skill_description": "Passive: Gain ?% () Attack Speed.Active: Deal ? () physical damage to target. For the rest of combat, Viego's attacks deal ? () bonus stacking magic damage.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Aphelios",
+    "cost": 2,
+    "synergies": [
+      "Targon"
+    ],
+    "skill_name": "Incendiary Onslaught",
+    "skill_description": "Start with Infernum equipped. On cast, switch to Severum for ? () attacks.Infernum: Attacks hit ? enemies and apply @SunderRatio*100@% Sunder for ? seconds.Severum: Gain @AttackSpeed*100@% Attack Spee",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Ashe",
+    "cost": 2,
+    "synergies": [
+      "Freljord",
+      "Quickstriker"
+    ],
+    "skill_name": "True Ice Arrow",
+    "skill_description": "Fire an arrow at target that deals ? () physical damage to them and ? () damage to adjacent enemies. Targets below @TrueDamageHealthBreakpoint*100@% max Health take true damage instead. 30% Chill all ",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Bard",
+    "cost": 2,
+    "synergies": [
+      "Caretaker"
+    ],
+    "skill_name": "Traveler's Call",
+    "skill_description": "Launch ? Meeps at nearby enemies that deal ? () magic damage. Add an additional Meep for each 3-star unit on your board. (Total Meeps: ?)",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "ChoGath",
+    "cost": 2,
+    "synergies": [
+      "Void",
+      "Juggernaut"
+    ],
+    "skill_name": "Rupture",
+    "skill_description": "Restore ? () Health and rupture a 2 hex circle beneath target. After a brief delay, enemies within are knocked up for ? seconds and take ? () magic damage.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "knockup",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Ekko",
+    "cost": 2,
+    "synergies": [
+      "Zaun",
+      "Disruptor"
+    ],
+    "skill_name": "Parallel Convergence",
+    "skill_description": "Create a ? hex zone around the target that lasts ? seconds. The next 3 attacks deal ? () bonus magic damage. When the zone ends, it deals ? () magic damage + @DamageRatio*100@% of the target's damage ",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Graves",
+    "cost": 2,
+    "synergies": [
+      "Bilgewater",
+      "Gunslinger"
+    ],
+    "skill_name": "Collateral Damage",
+    "skill_description": "Passive: Attacks fire in a cone on target, dealing @AttackDamageMultiplier*100@% damage to other enemies hit. Active: Fire an explosive shell at target, dealing ? () physical damage split among enemie",
+    "skill_range": 2,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 2,
+    "role": "carry"
+  },
+  {
+    "name": "Neeko",
+    "cost": 2,
+    "synergies": [
+      "Ixtal",
+      "Arcanist",
+      "Defender"
+    ],
+    "skill_name": "Pop Blossom",
+    "skill_description": "Leap at target and gain ? () Shield for ? seconds. Slam down after a brief delay, dealing ? () magic damage to enemies within two hexes and 20% Chilling them for ? seconds.{{TFT_Keyword_Chill}}",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Orianna",
+    "cost": 2,
+    "synergies": [
+      "Piltover",
+      "Invoker"
+    ],
+    "skill_name": "Command: Protect",
+    "skill_description": "Send the Ball to target, dealing ? () magic damage and splitting ? () magic damage among enemies within a 1 hex circle.Then grant ? () Shield to the two lowest Health allies for ? seconds.",
+    "skill_range": 4,
+    "skill_target": "lowest_hp",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "Poppy",
+    "cost": 2,
+    "synergies": [
+      "Demacia",
+      "Yordle",
+      "Juggernaut"
+    ],
+    "skill_name": "Hammer Shock",
+    "skill_description": "Gain ? () Shield for ? seconds and deal ? () physical damage to target. After a delay, briefly knock them up and deal the damage again. Bucklers fly out from the target, granting ? nearby allies @Ally",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "knockup",
+    "cc_duration": 1.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "RekSai",
+    "cost": 2,
+    "synergies": [
+      "Void",
+      "Vanquisher"
+    ],
+    "skill_name": "Burrow",
+    "skill_description": "Dash to the furthest enemy within ? hexes and deal ? () physical damage to them. The next ? attacks hit adjacent enemies and deal ? () physical damage.",
+    "skill_range": 1,
+    "skill_target": "farthest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Sion",
+    "cost": 2,
+    "synergies": [
+      "Noxus",
+      "Bruiser"
+    ],
+    "skill_name": "Soul Furnace",
+    "skill_description": "Passive: Takedowns grant ? permanent max Health. (Total: @TFTUnitProperty.:TFT16_Sion_BonusHealth@)Active: Gain ? () Shield for ? seconds. When it breaks, deal ? () magic damage to adjacent enemies.",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Teemo",
+    "cost": 2,
+    "synergies": [
+      "Yordle",
+      "Longshot"
+    ],
+    "skill_name": "Toxic Dart",
+    "skill_description": "Shoot the closest unpoisoned enemy, dealing ? () magic damage and poisoning them for ? seconds. Poisoned enemies take ? () magic damage each second.",
+    "skill_range": 6,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 6,
+    "role": "carry"
+  },
+  {
+    "name": "Tristana",
+    "cost": 2,
+    "synergies": [
+      "Yordle",
+      "Gunslinger"
+    ],
+    "skill_name": "Buster Shot",
+    "skill_description": "Fire a massive cannonball at target, dealing ? () physical damage. If they are within ? hexes, knock them back ? hexes and briefly Stun them.",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Tryndamere",
+    "cost": 2,
+    "synergies": [
+      "Freljord",
+      "Slayer"
+    ],
+    "skill_name": "Undying Rage",
+    "skill_description": "Become enraged for ? seconds. While enraged, gain ? () Durability and attacks are replaced with a strike that deals ? () physical damage. Ignore @ArmorIgnore*100@% of Armor against Chilled enemies.Blo",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "TwistedFate",
+    "cost": 2,
+    "synergies": [
+      "Bilgewater",
+      "Quickstriker"
+    ],
+    "skill_name": "Stacked Deck",
+    "skill_description": "Passive: Attacks deal ? () bonus magic damage. After every ?rd attack, throw 3 cards in a cone that deal ? () magic damage, reduced by @FalloffDamage*100@% for each enemy they pass through.Partners in",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Vi",
+    "cost": 2,
+    "synergies": [
+      "Piltover",
+      "Zaun",
+      "Defender"
+    ],
+    "skill_name": "Relentless Force",
+    "skill_description": "Gain ? () Shield for ? seconds. Slam on target, dealing ? () physical damage to enemies in a ? hex range. Every third cast deals ? () damage in a ? hex range instead and knocks up enemies hit for ? se",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "knockup",
+    "cc_duration": 1.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "XinZhao",
+    "cost": 2,
+    "synergies": [
+      "Demacia",
+      "Ionia",
+      "Warden"
+    ],
+    "skill_name": "Three Talon Strike",
+    "skill_description": "Strike target 3 times. Each strike deals ? () physical damage and restores ? () Health. The final one Stuns for ? seconds.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Yasuo",
+    "cost": 2,
+    "synergies": [
+      "Ionia",
+      "Slayer"
+    ],
+    "skill_name": "Sweeping Blade",
+    "skill_description": "Dash, then deal ? () physical damage to adjacent enemies. If only one enemy is hit, deal double damage.Blade Brothers: When you field Yasuo and Yone, Yasuo assists Yone's casts.Blade Brothers: When Yo",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Yorick",
+    "cost": 2,
+    "synergies": [
+      "Shadow Isles",
+      "Warden"
+    ],
+    "skill_name": "Mourning Mist",
+    "skill_description": "Restore ? () Health. Throw a globule of black mist at the enemy who has dealt the most damage this combat, preferring unique enemies. It 20% Chills them for ? seconds and raises the Mana cost of their",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Ahri",
+    "cost": 3,
+    "synergies": [
+      "Ionia",
+      "Arcanist"
+    ],
+    "skill_name": "Fox-Fire",
+    "skill_description": "Fire ? flames at target, each dealing ? () magic damage. Every 3rd cast, fire ? flames split between the target and up to ? nearby enemies.If there are nearby enemies, dash away.",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Darius",
+    "cost": 3,
+    "synergies": [
+      "Noxus",
+      "Defender"
+    ],
+    "skill_name": "Decimate",
+    "skill_description": "Restore ? () Health and spin, dealing ? () physical damage to adjacent enemies and applying a stack of Hemorrhage that deals ? () physical damage each second for ? seconds.If an enemy with Hemorrhage ",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "DrMundo",
+    "cost": 3,
+    "synergies": [
+      "Zaun",
+      "Bruiser"
+    ],
+    "skill_name": "Maximum Dosage",
+    "skill_description": "Bulk up for ? seconds. While bulked, restore ? () Health every second and attacks deal ? () physical damage.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Draven",
+    "cost": 3,
+    "synergies": [
+      "Noxus",
+      "Quickstriker"
+    ],
+    "skill_name": "Spinning Axes",
+    "skill_description": "Passive: If Draven has an empowered axe in hand, his next attack will throw it. On takedown, gain an Adoration stack, doubled if Draven or Darius scored the kill. Every ? Adoration stacks grants ? Gol",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Gangplank",
+    "cost": 3,
+    "synergies": [
+      "Bilgewater",
+      "Slayer",
+      "Vanquisher"
+    ],
+    "skill_name": "Powder Kegs",
+    "skill_description": "Toss barrels at the 3 nearest enemies and detonate them. They deal ? () damage, reduced by @FalloffDamage*100@% for each barrel in the chain. Barrels reduce their target's Armor by ?, increased to ? i",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Gwen",
+    "cost": 3,
+    "synergies": [
+      "Shadow Isles",
+      "Disruptor"
+    ],
+    "skill_name": "Snip Snip!",
+    "skill_description": "Dash around target and snip ? () times, dealing ? () magic damage to them and ? () damage to all other enemies in a cone.",
+    "skill_range": 2,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 2,
+    "role": "assassin"
+  },
+  {
+    "name": "Jinx",
+    "cost": 3,
+    "synergies": [
+      "Zaun",
+      "Gunslinger"
+    ],
+    "skill_name": "Switcheroo!",
+    "skill_description": "Passive: After attacking ? times, switch to Fishbones. While equipped, attacks are replaced with ? rockets that target random enemies and deal ? () physical damage.",
+    "skill_range": 4,
+    "skill_target": "random",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Kennen",
+    "cost": 3,
+    "synergies": [
+      "Ionia",
+      "Yordle",
+      "Defender"
+    ],
+    "skill_name": "Slicing Maelstrom",
+    "skill_description": "Gain ? () Shield and summon storm of lightning. ? waves of bolts hit enemies within, dealing ? () magic damage over ? seconds. The first ? targets to be struck by ? bolts are Stunned for ? seconds. Mu",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Kobuko",
+    "cost": 3,
+    "synergies": [
+      "Yordle",
+      "Bruiser",
+      "Invoker"
+    ],
+    "skill_name": "You & Me!",
+    "skill_description": "Passive: Yuumi joins your strongest Kobuko. Every ? seconds, she alternates between healing the lowest Health ally for ? () Health or granting ?% Attack Speed to the ally who has dealt the most damage",
+    "skill_range": 1,
+    "skill_target": "lowest_hp",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "support"
+  },
+  {
+    "name": "Leblanc",
+    "cost": 3,
+    "synergies": [
+      "Noxus",
+      "Invoker"
+    ],
+    "skill_name": "Distortions",
+    "skill_description": "Summon ? dashing mirror images that strike the target and up to ? other nearby enemies. The target takes ? () magic damage and is Stunned for ? second, while other units hit take ? () magic damage.",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "Leona",
+    "cost": 3,
+    "synergies": [
+      "Targon"
+    ],
+    "skill_name": "Solar Flare",
+    "skill_description": "Passive: Reduce instances of incoming damage by ? (). Your strongest Leona grants your strongest Diana ? Ability Power every second she survives.Active: Call down sun beams on the ? nearest enemies, S",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Loris",
+    "cost": 3,
+    "synergies": [
+      "Piltover",
+      "Warden"
+    ],
+    "skill_name": "Piltover Tussle",
+    "skill_description": "Gain ? () Shield for ? seconds. Charge and knock the target backwards, Stunning them and units hit for ? seconds and dealing ? () magic damage to them. After charging, force nearby enemies to target t",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Malzahar",
+    "cost": 3,
+    "synergies": [
+      "Void",
+      "Disruptor"
+    ],
+    "skill_name": "Void Swarm",
+    "skill_description": "Summon ? Voidlings that each attack a nearby enemy ? times. Each attack deals ? () magic damage.",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Milio",
+    "cost": 3,
+    "synergies": [
+      "Ixtal",
+      "Invoker"
+    ],
+    "skill_name": "Ultra Mega Fire Kick!!!",
+    "skill_description": "Launch a fuemigo at target that bounces ? times, dealing ? () magic damage to enemies hit. The last bounce deals ? () magic damage to enemies in a ? hex radius.",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "Nautilus",
+    "cost": 3,
+    "synergies": [
+      "Bilgewater",
+      "Juggernaut",
+      "Warden"
+    ],
+    "skill_name": "Titan's Wrath",
+    "skill_description": "Passive: Every ? seconds and on cast, the next attack deals damage in a 1 hex circle and deals ? () bonus magic damage.Active: Gain ? () Shield for ? seconds.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Sejuani",
+    "cost": 3,
+    "synergies": [
+      "Freljord",
+      "Defender"
+    ],
+    "skill_name": "Winter's Wrath",
+    "skill_description": "Gain ? () Shield for ? seconds. Strike in a cone and a line. Enemies hit take ? () magic damage and are 30% Chilled for ? seconds. If they are already Chilled, Stun them for ? second.{{TFT_Keyword_Chi",
+    "skill_range": 1,
+    "skill_target": "line",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Vayne",
+    "cost": 3,
+    "synergies": [
+      "Demacia",
+      "Longshot"
+    ],
+    "skill_name": "Tumble",
+    "skill_description": "Tumble to a nearby hex, then fire a bolt at target that deals ? () true damage.",
+    "skill_range": 6,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "true",
+    "attack_range": 6,
+    "role": "carry"
+  },
+  {
+    "name": "Zoe",
+    "cost": 3,
+    "synergies": [
+      "Targon"
+    ],
+    "skill_name": "Double Trouble Bubble",
+    "skill_description": "Passive: Damaging an enemy applies 30% Shred for ? seconds.Active: Kick ? bubbles at nearby enemies, dealing ? () magic damage and 30% Chilling them for ? seconds.{{TFT_Keyword_Shred}}{{TFT_Keyword_Ch",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Ambessa",
+    "cost": 4,
+    "synergies": [
+      "Noxus",
+      "Vanquisher"
+    ],
+    "skill_name": "Lacerate",
+    "skill_description": "Swipe and dash around target, dealing ? () physical damage to enemies in the path. Then slam chains on target, dealing ? () physical damage in a line. If any enemies are killed, immediately recast thi",
+    "skill_range": 1,
+    "skill_target": "line",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "BelVeth",
+    "cost": 4,
+    "synergies": [
+      "Void",
+      "Slayer"
+    ],
+    "skill_name": "Endless Banquet",
+    "skill_description": "Passive: On takedown, gain @AttackSpeedOnTakedown*100@% Attack Speed that decays over ? seconds.Active: Deal ? () physical damage in a 2 hex radius and transform for the rest of combat.While transform",
+    "skill_range": 2,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 2,
+    "role": "assassin"
+  },
+  {
+    "name": "Braum",
+    "cost": 4,
+    "synergies": [
+      "Freljord",
+      "Warden"
+    ],
+    "skill_name": "Unbreakable Frost",
+    "skill_description": "Raise shield for ? seconds, gaining ? () Durability and redirecting projectiles to towards Braum instead. When hit, deal ? () magic damage to nearby enemies and 30% Chill them for ? seconds.{{TFT_Keyw",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Diana",
+    "cost": 4,
+    "synergies": [
+      "Targon"
+    ],
+    "skill_name": "Lunar Rush",
+    "skill_description": "Passive: Ability damage from your strongest Leona and strongest Diana marks enemies as Moonlit, reducing their damage by @MoonlightDamageReduction*100@%.Active: Gain ? () Shield. Unleash a bolt of lun",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Fizz",
+    "cost": 4,
+    "synergies": [
+      "Bilgewater",
+      "Yordle"
+    ],
+    "skill_name": "Playful Trickster",
+    "skill_description": "Become briefly untargetable, then jump to the farthest enemy within ? hexes, avoiding Tanks and Fighters, and deal ? () magic damage to adjacent enemies. For the next ? attacks, gain @ASBoost*100@% At",
+    "skill_range": 1,
+    "skill_target": "farthest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Garen",
+    "cost": 4,
+    "synergies": [
+      "Demacia",
+      "Defender"
+    ],
+    "skill_name": "Judgment",
+    "skill_description": "Spin for ? seconds, gaining @Durability*100@% Durability and healing for ? () over the duration. Each second, deal ? () physical damage to adjacent enemies and reduce their Armor and Magic Resistance ",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Kaisa",
+    "cost": 4,
+    "synergies": [
+      "Assimilator",
+      "Void",
+      "Longshot"
+    ],
+    "skill_name": "Icathian Rain",
+    "skill_description": "Dash away from all enemies, then fire ? missiles split across the ? nearest enemies. Each missile deals ? () physical damage.",
+    "skill_range": 6,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 6,
+    "role": "carry"
+  },
+  {
+    "name": "Kalista",
+    "cost": 4,
+    "synergies": [
+      "Shadow Isles",
+      "Vanquisher"
+    ],
+    "skill_name": "Endless Rend",
+    "skill_description": "Summon ? () spears split among the ? nearest enemies. After a brief delay, they each impale their target, dealing ? () physical damage and reducing Armor by ?.",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Lissandra",
+    "cost": 4,
+    "synergies": [
+      "Freljord",
+      "Invoker"
+    ],
+    "skill_name": "Frozen Tomb",
+    "skill_description": "Encase target in ice, Stunning them for ? second and dealing ? () magic damage. All enemies within 2 hexes of them split ? () magic damage. If the target dies, shards fly out and split excess damage b",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  },
+  {
+    "name": "Lux",
+    "cost": 4,
+    "synergies": [
+      "Demacia",
+      "Arcanist"
+    ],
+    "skill_name": "Final Spark",
+    "skill_description": "Fire a ball of light at the most enemies, dealing ? () magic damage to the first ? enemies hit and Rooting them for ? second. Then fire a beam, dealing ? () magic damage to enemies hit by the ball and",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "MissFortune",
+    "cost": 4,
+    "synergies": [
+      "Bilgewater",
+      "Gunslinger"
+    ],
+    "skill_name": "Heartbreaker",
+    "skill_description": "Passive: Attacks ricochet to the highest current Health enemy, dealing @AutoRicochetMutliplier*100@% damage.Active: Fire waves of bullets that land on the ? nearest enemies. The first wave deals ? () ",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Nasus",
+    "cost": 4,
+    "synergies": [
+      "Shurima"
+    ],
+    "skill_name": "Fury of the Sands",
+    "skill_description": "Steal ? () Health split between the ? nearest enemies. For ? seconds, gain ? Armor and Magic Resist and deal ? () magic damage to adjacent enemies each second.",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Nidalee",
+    "cost": 4,
+    "synergies": [
+      "Ixtal",
+      "Huntress"
+    ],
+    "skill_name": "Relentless Pounce",
+    "skill_description": "Jump on an adjacent enemy with the lowest health, then deal ? () magic damage to them and ? () magic damage to adjacent enemies. If any die, cast again, dealing @DamageReductionPerCast*100@% damage.Ta",
+    "skill_range": 1,
+    "skill_target": "lowest_hp",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Renekton",
+    "cost": 4,
+    "synergies": [
+      "Shurima"
+    ],
+    "skill_name": "Slice and Dice",
+    "skill_description": "Dash to the lowest Health enemy within ? hexes, dealing ? () physical damage to all enemies in the path. Then slash ? times, each dealing ? () physical damage. Subsquent casts increase the number of s",
+    "skill_range": 1,
+    "skill_target": "lowest_hp",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "RiftHerald",
+    "cost": 4,
+    "synergies": [
+      "Void",
+      "Bruiser"
+    ],
+    "skill_name": "Warp Armor",
+    "skill_description": "Gain ? max Health and grow larger. Slam in a ? Hex circle on the target, dealing ? () magic damage to enemies hit. For ? seconds, gain ? () Durability + @DurabilityPerEnemy*100@% for each enemy target",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Seraphine",
+    "cost": 4,
+    "synergies": [
+      "Piltover",
+      "Disruptor"
+    ],
+    "skill_name": "Grand Encore",
+    "skill_description": "Gain ? notes. For each one active, deal ? () magic damage to a nearby enemy.While holding ? notes on cast, consume them to project a wave of energy. Allies hit restore ? () Health. Enemies hit take ? ",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Singed",
+    "cost": 4,
+    "synergies": [
+      "Zaun",
+      "Juggernaut"
+    ],
+    "skill_name": "Poison Trail",
+    "skill_description": "Passive: Run around the battlefield, leaving a poison trail that lingers for ? seconds. Poison trails deal ? () magic damage per second to enemies within. Gain ? () Mana each second.Active: For ? seco",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Skarner",
+    "cost": 4,
+    "synergies": [
+      "Ixtal"
+    ],
+    "skill_name": "Impale",
+    "skill_description": "Passive: All allies gain ? Armor.Active: Gain ? () Shield for ? seconds. Impale up to three nearby enemies in a line, dealing ? () physical damage and Stunning them for ? seconds.",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Swain",
+    "cost": 4,
+    "synergies": [
+      "Noxus",
+      "Arcanist",
+      "Juggernaut"
+    ],
+    "skill_name": "Nevermove",
+    "skill_description": "Passive: Each second, restore ? () Health and deal ? () magic damage to enemies within 1 Hex. Active: Open a demonic eye on the largest group of nearby enemies, dealing ? () magic damage and Stunning ",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Taric",
+    "cost": 4,
+    "synergies": [
+      "Targon"
+    ],
+    "skill_name": "Starlight's Touch",
+    "skill_description": "Passive: All allies gain ? Magic Resist. Once per combat after dropping below @InvunerabilityHealthThreshold*100@% max Health, restore ? health over ? seconds.Active: Gain ? () Shield and grant the ? ",
+    "skill_range": 1,
+    "skill_target": "self",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Veigar",
+    "cost": 4,
+    "synergies": [
+      "Yordle",
+      "Arcanist"
+    ],
+    "skill_name": "Dark Storm",
+    "skill_description": "Passive: Gain @IncreasedAPRatio*100@% more Ability Power from all sources. Active: Call down a storm of ? meteors across the battlefield that deal ? () magic damage each. They can innately critically ",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Warwick",
+    "cost": 4,
+    "synergies": [
+      "Zaun",
+      "Quickstriker"
+    ],
+    "skill_name": "Eternal Hunger",
+    "skill_description": "Gain @AttackSpeed*100@% Attack Speed, @Omnivamp*100@% Omnivamp, increased Move Speed, and deal ? () bonus physical damage on attack for the rest of combat. While this effect is active, takedowns grant",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Wukong",
+    "cost": 4,
+    "synergies": [
+      "Ionia",
+      "Bruiser"
+    ],
+    "skill_name": "Diverting Trickster",
+    "skill_description": "Passive: On death, summon a Stone copy with ? () Health and Wukong's items.Active: For 4 seconds, gain ? () Armor and Magic Resist. Then spin, dealing ? () physical damage to all enemies within 2 hexe",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Yone",
+    "cost": 4,
+    "synergies": [
+      "Ionia",
+      "Slayer"
+    ],
+    "skill_name": "Kin of the Stained Blade",
+    "skill_description": "Passive: Attacks alternate between dealing ? () bonus physical damage and ? () bonus magic damage.Active: Strike through the most enemies possible within ? hexes, knocking them up for ? seconds and de",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "knockup",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Yunara",
+    "cost": 4,
+    "synergies": [
+      "Ionia",
+      "Quickstriker"
+    ],
+    "skill_name": "Transcendent State",
+    "skill_description": "For the next ? seconds, gain ? Attack Speed, infinite range, and replace attacks with lasers. Lasers deal ? () physical damage in a line, reduced by @DamageReductionPerEnemyHit*100@% for each enemy th",
+    "skill_range": 4,
+    "skill_target": "line",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Aatrox",
+    "cost": 5,
+    "synergies": [
+      "Darkin",
+      "World Ender",
+      "Slayer"
+    ],
+    "skill_name": "The Darkin Blade",
+    "skill_description": "On cast, cycle through one of the following abilities:Slash in a line, dealing ? () physical damage to enemies hit and 20% Sundering them for ? seconds.Swipe in a cone, dealing ? () physical damage to",
+    "skill_range": 1,
+    "skill_target": "line",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Annie",
+    "cost": 5,
+    "synergies": [
+      "Dark Child",
+      "Arcanist"
+    ],
+    "skill_name": "Enraged Inferno",
+    "skill_description": "Erupt the entire battlefield in flames, permanently Burning and Wounding all enemies and dealing ? () magic damage to each of them over ? seconds. Annie's max Mana is reduced by ? for the rest of comb",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "AurelionSol",
+    "cost": 5,
+    "synergies": [
+      "Star Forger",
+      "Targon"
+    ],
+    "skill_name": "The Skies Descend",
+    "skill_description": "Passive: For every ? ability damage dealt to enemies in player combat, gain Stardust. Stardust makes The Skies Descend more powerful. (Current Stardust: @TFTUnitProperty.:TFT16_AurelionSol_Stardust@) ",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Azir",
+    "cost": 5,
+    "synergies": [
+      "Shurima",
+      "Emperor",
+      "Disruptor"
+    ],
+    "skill_name": "Arise!",
+    "skill_description": "Passive: After witnessing 3 attacks from Azir, Sand Soldiers deal ? () magic damage to their target.Active: Summon a Sand Soldier near target and command them to strike. If ? Soldiers are already out,",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "BaronNashor",
+    "cost": 5,
+    "synergies": [
+      "Void",
+      "Riftscourge"
+    ],
+    "skill_name": "Wrath of the Void",
+    "skill_description": "Passive: Immune to Crowd Control effects. Attacks deal damage in a line on target. If no enemies are in range, dash to the next one and knock up adjacent enemies on arrival.While in the Void Rift, eru",
+    "skill_range": 2,
+    "skill_target": "aoe",
+    "cc_type": "knockup",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 2,
+    "role": "assassin"
+  },
+  {
+    "name": "Brock",
+    "cost": 5,
+    "synergies": [
+      "Ixtal"
+    ],
+    "skill_name": "Seismic Slam",
+    "skill_description": "Passive: Immune to crowd control effects. Attacks briefly knock up the target and deal @PassivePercentAoE*100@% damage in a 1 hex radius around them.Active: Slam the ground, dealing ? () physical dama",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "knockup",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Fiddlesticks",
+    "cost": 5,
+    "synergies": [
+      "Harvester",
+      "Vanquisher"
+    ],
+    "skill_name": "Crowstorm",
+    "skill_description": "Teleport into a large cluster of enemies within ? hexes and Stun them for ? seconds. Begin losing ? mana per second. While casting, deal ? () magic damage per second to all enemies within a ? hex radi",
+    "skill_range": 2,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 2,
+    "role": "carry"
+  },
+  {
+    "name": "Galio",
+    "cost": 5,
+    "synergies": [
+      "Demacia",
+      "Heroic"
+    ],
+    "skill_name": "Inspirational Might",
+    "skill_description": "Passive: Every ?rd attack deals ? () magic damage in a circle around the target.Active: Dash into the largest group of units and inspire all allies within 2 hexes, granting them ? () Shield for ? seco",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Kindred",
+    "cost": 5,
+    "synergies": [
+      "Eternal",
+      "Quickstriker"
+    ],
+    "skill_name": "Lamb's Respite",
+    "skill_description": "Dash, then create a ?-hex radius zone for ? seconds that shields allies within for ? () health for the zone's duration. While active, double current Attack Speed and on attack, fire a secondary arrow ",
+    "skill_range": 4,
+    "skill_target": "self",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Lucian",
+    "cost": 5,
+    "synergies": [
+      "Soulbound",
+      "Gunslinger"
+    ],
+    "skill_name": "The Culling",
+    "skill_description": "Fire ? () shots towards target. Each shot explodes on the first enemy hit, dealing ? () physical damage to all nearby enemies.",
+    "skill_range": 4,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Mel",
+    "cost": 5,
+    "synergies": [
+      "Noxus",
+      "Disruptor"
+    ],
+    "skill_name": "Radiant Eclipse",
+    "skill_description": "Passive: While gaining Mana, throw out ? radiant orbs that orbit around target. They deal ? () magic damage in a 1 hex radius and drain ? Mana from enemies hit each second. After draining ? mana, gain",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Ornn",
+    "cost": 5,
+    "synergies": [
+      "Blacksmith",
+      "Warden"
+    ],
+    "skill_name": "Call of the Forge",
+    "skill_description": "Summon an elemental from behind the farthest enemy. It 20% Chills enemies hit for ? seconds and deals ? () magic damage to them.When it arrives, headbutt it and redirect it toward another distant enem",
+    "skill_range": 1,
+    "skill_target": "farthest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Ryze",
+    "cost": 5,
+    "synergies": [
+      "Rune Mage"
+    ],
+    "skill_name": "Runic Overload",
+    "skill_description": "Release a runic blast, dealing ? () magic damage. It splits in two, dealing @SplitPercentDamage*100@% of the damage to the closest two enemies. Each secondary blast splits an additional time.Bilgewate",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Sett",
+    "cost": 5,
+    "synergies": [
+      "Ionia",
+      "The Boss"
+    ],
+    "skill_name": "The Show Stopper",
+    "skill_description": "Grab target and slam them forward, dealing ? () + ? () of their max Health as magic damage to them. All other enemies within ? hexes take @PercentAoEDamage*100@% of the total damage.",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "carry"
+  },
+  {
+    "name": "Shyvana",
+    "cost": 5,
+    "synergies": [
+      "Dragonborn",
+      "Juggernaut"
+    ],
+    "skill_name": "Dragon's Descent / Flame Breath",
+    "skill_description": "Dragon's Descent: Transform into a dragon, gaining ? max Health. Briefly gain @TransformDurability*100@% Durability and dive-bomb into the largest group of enemies, dealing ? () physical damage in a 3",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Sylas",
+    "cost": 5,
+    "synergies": [
+      "Chainbreaker",
+      "Arcanist",
+      "Defender"
+    ],
+    "skill_name": "Stolen Might",
+    "skill_description": "Cast one of three spells:Cataclysm: Leap on a nearby enemy. Deal ? () magic damage to all enemies within 2 hexes and Stun them for ? seconds.Demacian Justice: Deal ? () magic damage to target. If they",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "stun",
+    "cc_duration": 1.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "THex",
+    "cost": 5,
+    "synergies": [
+      "HexMech",
+      "Piltover",
+      "Gunslinger"
+    ],
+    "skill_name": "Hextech Arsenal",
+    "skill_description": "Passive: Attacks fire a barrage of ? bullets.Active: Gain ? () Shield and begin consuming ? mana per second. Each second while casting, fire a laser that deals ? () physical damage, reduced by @LaserF",
+    "skill_range": 2,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 2,
+    "role": "carry"
+  },
+  {
+    "name": "TahmKench",
+    "cost": 5,
+    "synergies": [
+      "Bilgewater",
+      "Glutton",
+      "Bruiser"
+    ],
+    "skill_name": "Devour",
+    "skill_description": "Devour target for ? seconds, dealing ? () magic damage and making them immune to other sources of damage. During this time, gain @DamageReduction*100@% Durability. If they are immune to crowd control,",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Thresh",
+    "cost": 5,
+    "synergies": [
+      "Shadow Isles",
+      "Warden"
+    ],
+    "skill_name": "The Box",
+    "skill_description": "Passive: Each second, deal ? () magic damage to all enemies within 2 hexes. Heal for @HealthDrainPercentHeal*100@% of the damage dealt by this effect.Active: Create a prison of walls in a 2 hex radius",
+    "skill_range": 1,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 1,
+    "role": "tank"
+  },
+  {
+    "name": "Volibear",
+    "cost": 5,
+    "synergies": [
+      "Freljord",
+      "Bruiser"
+    ],
+    "skill_name": "The Relentless Storm",
+    "skill_description": "Bite the target and mark them, dealing ? () physical damage, increased by @PercentDamageIncrease*100@% if they are already marked. After casting ? times, leap to a nearby hex, activating Stormbringer ",
+    "skill_range": 1,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 1,
+    "role": "assassin"
+  },
+  {
+    "name": "Xerath",
+    "cost": 5,
+    "synergies": [
+      "Shurima",
+      "Ascendant"
+    ],
+    "skill_name": "Eye of the Ascendant",
+    "skill_description": "Launch ? arcane blasts randomly split between the closest ? enemies that each deal ? () magic damage.",
+    "skill_range": 4,
+    "skill_target": "random",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "carry"
+  },
+  {
+    "name": "Zaahen",
+    "cost": 5,
+    "synergies": [
+      "Darkin",
+      "Immortal"
+    ],
+    "skill_name": "Divine Challenge",
+    "skill_description": "Dash around target and slash in a circle, dealing ? () physical damage to target and ? () physical damage to all other adjacent enemies hit. If the target doesn't die, immediately cast again.If this A",
+    "skill_range": 2,
+    "skill_target": "aoe",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "physical",
+    "attack_range": 2,
+    "role": "assassin"
+  },
+  {
+    "name": "Ziggs",
+    "cost": 5,
+    "synergies": [
+      "Zaun",
+      "Yordle",
+      "Longshot"
+    ],
+    "skill_name": "Mega Inferno Bomb",
+    "skill_description": "Passive: Attacks are replaced with a bomb that bounces ? time, dealing ? () magic damage to units hit.Active: Throw an enormous bomb at the largest ?-hex group of enemies that explodes on impact, deal",
+    "skill_range": 6,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 6,
+    "role": "carry"
+  },
+  {
+    "name": "Zilean",
+    "cost": 5,
+    "synergies": [
+      "Chronokeeper",
+      "Invoker"
+    ],
+    "skill_name": "Visions of the End",
+    "skill_description": "Throw a Time Bomb on the nearest enemy without one. Time Bombs deal ? () magic damage each second. When the target dies, they explode, dealing ? () magic damage in a 1 hex radius and grant Zilean ? ma",
+    "skill_range": 4,
+    "skill_target": "nearest",
+    "cc_type": "",
+    "cc_duration": 0.0,
+    "damage_type": "magic",
+    "attack_range": 4,
+    "role": "support"
+  }
+]
